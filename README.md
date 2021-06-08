@@ -81,18 +81,9 @@ ___
 
 ## 5. 앱 실행 환경 구축
 
-1. JSP 개발환경 구축 <br>
-   (1) Eclipse Java EE 다운로드 https://www.eclipse.org/downloads/packages/ 에서 Eclipse IDE for Enterprise Java and Web Developers 설치<br>
-   (2) Eclipse -> New -> Open File -> GDDL_MobileServer<br>
-   (3) Tomcat 다운로드 https://shinysblog.tistory.com/5<br>
-   (4) GDDL_MobileServer 우클릭 -> Properties -> Java Build Path -> Libaries -> gson과 mysql-connect가 없을때만 Add JARs.. -> GDDL_MobileServer -> WebContent -> WEB-INF -> gson, mysql-connect 둘다 Add && Apply<br>
-   (5) GDDL_MobileServer 우클릭 -> Properties -> WebProjectSetting -> Context root : / 입력 -> Apply<br>
-   (6) GDDL_MobileServer 우클릭 -> Properties -> Server -> Tomcat9.0 -> Apply<br>
-   (7) Eclipse -> Project -> Properties -> Targeted Runtime -> New -> Tomcat9.0 -> Finish -> Apply<br>
+1. JSP 개발환경 구축 https://blog.naver.com/skews/222323655111 참고
 
-2. Mysql 설치환경 구축 https://m.blog.naver.com/bjh7007/221829548634 참고
-
-3. Android Studio 실행
+2. Android Studio 실행
 
        File -> Open -> GajDaDeuLim
        FinalURLIP.java  파일에서 public final static String adress = "My IP";
@@ -100,12 +91,12 @@ ___
        개인Device의 경우 My IP부분에 자신의 IP입력
        자신 IP 확인방법 : (win + r) -> cmd -> ipconfig -> Ipv4주소
 
-4. MySQL Workbench 실행
+3. MySQL Workbench 실행
 
        스키마 생성 (Schema name = gddl)
        "갖다드림" SQL file Query 실행
 
-5. Eclipse 실행
+4. Eclipse 실행
 
 ```java
 public class FinalDB {
@@ -188,5 +179,9 @@ ___
 ___
 
 ## 9. 결론
+- "갖다드림" 은 캠퍼스를 중심으로 학생간 심부름 서비스 플랫폼을 제공하는 어플이다.
+- 고용된 직원으로 서비스를 제공하는 것이 아니라, 학생 간 서비스를 주고 받는다는 점에서 기존의 심부름 어플과 차별성을 두고 있다. 또한 같은 학교의 재학생이 서비스를 제공한다는 점에서 서비스의 신뢰도를 보장할 수 있다. 또한 배달 개념의 서비스가아닌 심부름 개념이기에 물건 배달 외에 서비스를 제공할 수 있다.
+- 캠퍼스 내 학생 및 기숙사/인근 거주 학생을 중심으로 운영되므로 , 방학이나 전염병 유행 상황 시 서비스가 원활하게 운영되지 않을 수 있다. 또한 서비스에 대한 신뢰도가 사용자의 매너에 의존한다는 점에서 한계점을 가진다. 
+- Android 안드로이드에서 HttpUrlConnection을 이용해 Servlet과 단방향 통신으로 하고, service 기능을 이용해 socket과 양방향 통신을 하며, 백엔드로 Servlet과 socket이 JDBC를 통해 Database에 접근 및 관리한다.
 
 ___
