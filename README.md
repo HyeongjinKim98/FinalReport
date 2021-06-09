@@ -17,9 +17,10 @@
  </p>
 
 # Project Name 
-갖다드림(bring you)
+##갖다드림(bring you)
 
-# Team Member : 김준혁, 김형진, 마건우, 옥석우, 차형석
+# Team Member
+##김준혁, 김형진, 마건우, 옥석우, 차형석
 
 # 영상 Youtube Link
 https://youtu.be/jB9QAhMm0tQ
